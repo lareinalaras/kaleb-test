@@ -81,7 +81,7 @@ export default {
   },
   methods: {
     submitStep1() {
-      console.log("Form data:", this.formData);
+        localStorage.setItem("step1Data", JSON.stringify(this.formData));
       this.$router.push("/step2");
     },
   },
